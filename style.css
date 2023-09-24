@@ -1,0 +1,29 @@
+/* Style for the container div */
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Style for the text div */
+.text {
+    margin-left: 30px; /* Add some spacing between the map and text */
+}
+
+/* Center the heading */
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif; /* Use a sans-serif font */
+    font-size: 60px; /* Increase font size */
+}
+
+/* Style for h2 elements */
+h2 {
+    font-family: Arial, sans-serif; /* Use a sans-serif font */
+    font-size: 40px; /* Increase font size */
+}
+
+/* Increase paragraph text size and use sans-serif font */
+p {
+    font-family: Arial, sans-serif; /* Use a sans-serif font */
+    font-size: 20px; /* Increase font size */
+}
