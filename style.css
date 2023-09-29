@@ -1,0 +1,57 @@
+/* Style for the map and bar graph container */
+.map-and-bar-container {
+  display: flex; 
+  justify-content: space-between; 
+}
+
+/* Style for the map container */
+.map-container {
+  flex: 1; 
+}
+
+/* Style for the bar graph container */
+.bar-container {
+  flex: 1; 
+  margin-left: 10px; 
+}
+
+/* Style for the text div */
+.text {
+  margin-left: 15px; 
+}
+
+/* Center the heading */
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif; 
+  font-size: 50px; 
+}
+
+/* Style for h2 elements */
+h2 {
+  font-family: Arial, sans-serif; 
+  font-size: 25px; 
+}
+
+/* Increase paragraph text size and use sans-serif font */
+p {
+  font-family: Arial, sans-serif; 
+  font-size: 15px; 
+}
+
+/* Add space on the left and right sides of the page */
+body {
+margin-left: 100px; /* Adjust the value to control the left margin */
+margin-right: 100px; /* Adjust the value to control the right margin */
+}
+
+/* Adjust the width of the header and its children */
+header {
+max-width: calc(100% - 40px); 
+}
+
+/* Center the header horizontally */
+header {
+margin-left: auto;
+margin-right: auto;
+}

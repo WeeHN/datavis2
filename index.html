@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cost of Living Worldwide</title>
+
+  <!-- Include Vega and Vega-Embed libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+  
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Link to the external CSS file (style.css with Pure.css) -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style>
+    .map-and-bar-container {
+      float: left;
+    }
+
+    .bar-graph-container {
+      float: right;
+    
+    }
+
+    .text-container {
+      margin-top: 20px;
+    }
+
+    .food-price-container {
+      margin-top: 20px;
+    }
+
+    /* Move the Figure 3 heading above the food-price-vega-vis element */
+    h2.figure-3 {
+      margin-top: 20px;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cost of Living Worldwide</h1>
+    <h2>Figure 1: Worldwide Cost of Living Index (2022)</h2>
+    <div class="map-and-bar-container">
+      <!-- Map container -->
+      <div class="map-container" id="world-vega-vis"></div>
+
+      <div class="text-container">
+        <p>The cost of living has been steadily rising in the last decade. Factors such as political conflicts, COVID-19, and large-scale world events such as war have contributed to this extreme rise in the cost of living crisis.</p>
+        <h2>Figure 2: Highest Cost of Living Index (2022)</h2>
+        <div class="bar-graph-container" id="bar-vega-vis"></div>
+      </div>
+    </div>
+
+    <h2 class="figure-3">Figure 3: Average Price of Food Essentials (2018-2022)</h2>
+    <p>In Australia, the average price of food essentials such as bread, milk, eggs, and potatoes, have been steadily been increasing in the last 4 years (2018-2022). Eggs alone have double in average price from 2018 to 2022. </p>
+
+    <div class="food-price-container" id="food-price-vega-vis"></div>
+  </header>
+
+  <script>
+    vegaEmbed("#world-vega-vis", "world_vega.vega", { mode: "vega" });
+    vegaEmbed("#bar-vega-vis", "top20_bar.vega", { mode: "vega" });
+    vegaEmbed("#food-price-vega-vis", "area.vega", { mode: "vega" });
+  </script>
+
+</body>
+</html>
