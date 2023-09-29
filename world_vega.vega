@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 700,
-  "height": 580,
+  "width": 800,
+  "height": 500,
   "data": {
     "url": "ne_110m_admin_0_countries.topojson",
     "format": {
@@ -15,7 +15,7 @@
   "layer": [
     {
       "data": {
-        "values": [{"x": 0, "x2": 700, "y": 0, "y2": 500}]
+        "values": [{"x": 0, "x2": 800, "y": 0, "y2": 500}]
       },
       "mark": {
         "type": "rect",
@@ -64,7 +64,7 @@
               "url": "Cost_of_Living_Index_2022.csv"
             },
             "key": "Country",
-            "fields": ["Cost of Living Index"]
+            "fields": ["Cost_of_Living_Index"]
           }
         }
       ],
@@ -74,7 +74,7 @@
       },
       "encoding": {
         "color": {
-          "field": "Cost of Living Index",
+          "field": "Cost_of_Living_Index",
           "type": "quantitative",
           "scale": {
             "type": "linear",
@@ -89,25 +89,11 @@
             "title": "Country"
           },
           {
-            "field": "Cost of Living Index",
+            "field": "Cost_of_Living_Index",
             "type": "quantitative",
             "format": ".2f"
           }
         ]
-      }
-    },
-    {
-      "data": {
-        "url": "ne_110m_admin_0_countries.topojson",
-        "format": {
-          "type": "topojson",
-          "feature": "ne_110m_admin_0_countries"
-        }
-      },
-      "mark": {
-        "type": "geoshape",
-        "stroke": "black",
-        "fill": null 
       }
     }
   ],
