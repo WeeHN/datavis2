@@ -61,11 +61,12 @@
     <div class="food-price-container" id="food-price-vega-vis"></div>
   </header>
 
-  <script>
-    vegaEmbed("#world-vega-vis", "world_vega.vega", { mode: "vega" });
-    vegaEmbed("#bar-vega-vis", "top20_bar.vega", { mode: "vega" });
-    vegaEmbed("#food-price-vega-vis", "area.vega", { mode: "vega" });
-  </script>
+<script>
+    vegaEmbed("#world-vega-vis", "world_vega.vega", { mode: "vega", actions: false });
+    vegaEmbed("#bar-vega-vis", "top20_bar.vega", { mode: "vega", actions: false });
+    vegaEmbed("#food-price-vega-vis", "area.vega", { mode: "vega", actions: false });
+</script>
+
 
 </body>
 </html>
