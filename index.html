@@ -1,72 +1,64 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
 <head>
   <title>Cost of Living Worldwide</title>
-
-  <!-- Include Vega and Vega-Embed libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
-  
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
-    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-  <!-- Link to the external CSS file (style.css with Pure.css) -->
   <link rel="stylesheet" type="text/css" href="style.css">
-
   <style>
-    .map-and-bar-container {
-      float: left;
-    }
-
-    .bar-graph-container {
-      float: right;
-    
-    }
-
-    .text-container {
-      margin-top: 20px;
-    }
-
-    .food-price-container {
-      margin-top: 20px;
-    }
-
-    /* Move the Figure 3 heading above the food-price-vega-vis element */
-    h2.figure-3 {
-      margin-top: 20px;
-      clear: both;
+    .flex-container {
+      display: flex;
+      flex-direction: column;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>The Cost of Living Crisis in Australia</h1>
-    <h2>Figure 1: Worldwide Cost of Living Index (2022)</h2>
-    <div class="map-and-bar-container">
-      <!-- Map container -->
-      <div class="map-container" id="world-vega-vis"></div>
-
-      <div class="text-container">
-        <p>The cost of living has been steadily rising in the last decade. Factors such as political conflicts, COVID-19, and large-scale world events such as war have contributed to this extreme rise in the cost of living crisis.</p>
-        <h2>Figure 2: Highest Cost of Living Index (2022)</h2>
-        <div class="bar-graph-container" id="bar-vega-vis"></div>
+  <header class="header">
+    <div class="container2">
+      <h1>The Cost of Living Crisis in Australia</h1>
+    </div>
+  </header>
+  <div class="text"></div>
+  <div class="container">
+    <div class="graph-container">
+      <div class="flex-container">
+        <h2>Figure 1: Worldwide Cost of Living Index (2022)</h2>
+        <div class="visualization" id="world-vega-vis"></div>
+        <p>The rising cost of living is driven by inflation, increased housing and healthcare costs, and higher education, energy, and food prices. This poses challenges in finding affordable housing, managing healthcare and education expenses, and maintaining living standards. Income stagnation worsens these issues, leading to income inequality, reduced access to essential services, and increased poverty risks. Addressing this requires balancing government policies for economic growth, price stability, and social equity with individual financial adaptation to changing economic conditions.</p>
       </div>
     </div>
+    <div class="graph-container">
+      <h2>Figure 2: Highest Cost of Living Index (2022)</h2>
+        <div class="visualization" id="bar-vega-vis"></div>
+       
 
-    <h2 class="figure-3">Figure 3: Average Price of Food Essentials (2018-2022)</h2>
-    <p>In Australia, the average price of food essentials such as bread, milk, eggs, and potatoes, have been steadily been increasing in the last 4 years (2018-2022). Eggs alone have double in average price from 2018 to 2022. </p>
+      
+      <p>Australia is one of the country's with the highest cost of living, ranking at 15th place in terms of Cost of Living Index.</p>
+    </div>
+    <div class="graph-container">
+      <h2>Figure 3: Average Price of Food Essentials in Australia (2018-2022)</h2>
+      <p>In Australia, the average price of food essentials such as bread, milk, potatoes and </p>
+      <div class="visualization" id="food-price-vega-vis"></div>
+    </div>
+    <div class="graph-container">
+      <h2>Figure 4: Relationship Between Local Purchasing Power and Cost of Living</h2>
+      <div class "visualization" id="scatter-vega-vis"></div>
+    </div>
+    <div class="graph-container">
+      <h2>Figure 5: Cost of Living Index by City in Australia</h2>
+      <div class="visualization" id="heatmap-vega-vis"></div>
+    </div>
+  </div>
 
-    <div class="food-price-container" id="food-price-vega-vis"></div>
-  </header>
-
-<script>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+  <script>
     vegaEmbed("#world-vega-vis", "world_vega.vega", { mode: "vega", actions: false });
     vegaEmbed("#bar-vega-vis", "top20_bar.vega", { mode: "vega", actions: false });
     vegaEmbed("#food-price-vega-vis", "area.vega", { mode: "vega", actions: false });
-</script>
+    vegaEmbed("#scatter-vega-vis", "scatter.vega", { mode: "vega", actions: false });
+    vegaEmbed("#heatmap-vega-vis", "heatmap.vega", { mode: "vega", actions: false });
 
 
+  </script>
 </body>
 </html>
