@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "Australia Cost of Living.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "City", "type": "nominal", "title": "City"},
+    "y": {"field": "Total Index Sum", "type": "quantitative", "title": "Total Index Sum"},
+    "color": {
+      "field": "variable",
+      "type": "nominal",
+      "title": "Index Type",
+      "scale": {"scheme": "category10"}
+    },
+    "tooltip": [
+      {"field": "City", "type": "nominal", "title": "City"},
+      {"field": "variable", "type": "nominal", "title": "Index Type"},
+      {"field": "value", "type": "quantitative", "title": "Index Value"}
+    ]
+  },
+  "transform": [
+    {"fold": ["Cost of Living Index", "Rent Index", "Cost of Living Plus Rent Index", "Groceries Index", "Restaurant Price Index", "Local Purchasing Power Index"], "as": ["variable", "value"]
+    }
+  ]
+}
