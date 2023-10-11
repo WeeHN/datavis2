@@ -1,57 +1,67 @@
-/* Style for the map and bar graph container */
-.map-and-bar-container {
-  display: flex; 
-  justify-content: space-between; 
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
 }
 
-/* Style for the map container */
-.map-container {
-  flex: 1; 
-}
 
-/* Style for the bar graph container */
-.bar-container {
-  flex: 1; 
-  margin-left: 10px; 
-}
-
-/* Style for the text div */
-.text {
-  margin-left: 15px; 
-}
-
-/* Center the heading */
-h1 {
-  text-align: center;
-  font-family: Arial, sans-serif; 
-  font-size: 50px; 
-}
-
-/* Style for h2 elements */
-h2 {
-  font-family: Arial, sans-serif; 
-  font-size: 25px; 
-}
-
-/* Increase paragraph text size and use sans-serif font */
-p {
-  font-family: Arial, sans-serif; 
-  font-size: 15px; 
-}
-
-/* Add space on the left and right sides of the page */
 body {
-margin-left: 100px; /* Adjust the value to control the left margin */
-margin-right: 100px; /* Adjust the value to control the right margin */
+  font-family: Arial, sans-serif;
+  background-color: #fff;
 }
 
-/* Adjust the width of the header and its children */
-header {
-max-width: calc(100% - 40px); 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ed1c22;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
-/* Center the header horizontally */
-header {
-margin-left: auto;
-margin-right: auto;
+.container2 {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ed1c22;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: 'Avant Garde Gothic Demi Bold', sans-serif;/* to match coles*/
+
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.graph-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius:10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+
+h2 {
+  font-size: 30px; 
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15x; 
+  margin-bottom: 10px;
 }
