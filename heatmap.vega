@@ -1,12 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600, 
+  "height": 400, 
   "data": {
     "url": "Australia Cost of Living.csv"
   },
   "mark": "bar",
   "encoding": {
-    "x": {"field": "City", "type": "nominal", "title": "City"},
-    "y": {"field": "Total Index Sum", "type": "quantitative", "title": "Total Index Sum"},
+    "y": {"field": "City", "type": "nominal", "title": "City"}, 
+    "x": {"field": "Total Index Sum", "type": "quantitative", "title": "Total Index Sum"}, 
     "color": {
       "field": "variable",
       "type": "nominal",
