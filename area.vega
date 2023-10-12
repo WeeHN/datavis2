@@ -22,7 +22,7 @@
       "y": {
         "field": "Average Price",
         "type": "quantitative",
-        "axis": {"min": 0}
+        "axis": {"title": "Average Price ($)", "min": 0}
       },
       "color": {
         "field": "Food Item",
