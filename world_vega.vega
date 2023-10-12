@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 700,
-  "height": 580,
+  "width": 600,
+  "height": 400,
   "data": {
     "url": "ne_110m_admin_0_countries.topojson",
     "format": {
@@ -13,16 +13,6 @@
     "type": "equalEarth"
   },
   "layer": [
-    {
-      "data": {
-        "values": [{"x": 0, "x2": 700, "y": 0, "y2": 500}]
-      },
-      "mark": {
-        "type": "rect",
-        "fill": "lightblue",
-        "opacity": 0.3
-      }
-    },
     {
       "data": {
         "url": "WorldMapWithGraticules.topojson",
@@ -80,7 +70,8 @@
             "type": "linear",
             "domain": [0, 150],
             "range": ["#ffffcc", "#800026"]
-          }
+          },
+          "legend": {"title": "Cost of Living Index"}
         },
         "tooltip": [
           {
@@ -107,7 +98,7 @@
       "mark": {
         "type": "geoshape",
         "stroke": "black",
-        "fill": null 
+        "fill": null
       }
     }
   ],
