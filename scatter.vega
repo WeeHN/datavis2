@@ -40,7 +40,7 @@
             "y": {
               "field": "Value",
               "type": "quantitative",
-              "title": "Value"
+              "title": "Living Cost Index Value"
             },
             "color": {
               "field": "Variable",
