@@ -14,7 +14,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ed1c22;
+  background-color: #099950;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-top: 20px;
@@ -24,7 +24,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ed1c22;
+  background-color: #099950;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-top: 20px;
@@ -39,8 +39,8 @@ body {
 .header h1 {
   font-size: 50px;
   color: #ffffff;
-  font-family: 'Avant Garde Gothic Demi Bold', sans-serif;/* to match coles*/
-
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* to match whoolies*/
+  font-weight: 300;
 }
 
 .text {
