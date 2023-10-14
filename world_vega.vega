@@ -69,7 +69,7 @@
           "scale": {
             "type": "linear",
             "domain": [0, 150],
-            "range": ["#ffffcc", "#800026"]
+            "range": ["#f7f7f7", "#7a0177"]
           },
           "legend": {"title": "Cost of Living Index", "orient": "bottom"}
         },
@@ -102,5 +102,11 @@
       }
     }
   ],
-  "config": {}
+  "config": {
+    "range": {
+      "category": {
+        "scheme": "set2"  
+      }
+    }
+  }
 }
