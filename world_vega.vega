@@ -71,7 +71,7 @@
             "domain": [0, 150],
             "range": ["#ffffcc", "#800026"]
           },
-          "legend": {"title": "Cost of Living Index"}
+          "legend": {"title": "Cost of Living Index", "orient": "bottom"}
         },
         "tooltip": [
           {
