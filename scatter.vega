@@ -51,8 +51,9 @@
               {"field": "Variable", "title": "Variable"},
               {"field": "Value", "title": "Value"},
               {"field": "Consumer Price Index (CPI) (% change)", "title": "CPI"},
-              {"field": "Date", "title": "Date"}
+              {"field": "Date", "title": "Date", "timeUnit": "yearmonthdate", "format": "%-d/%-m/%Y"}
             ]
+            
           },
           "width": 600,
           "height": 600
@@ -106,8 +107,8 @@
     }
   ],
   "resolve": {"legend": {"color": "independent"}},
-  "width": 800,
-  "height": 800,
+  "width": 400,
+  "height": 400,
   "config": {
     "view": {"stroke": null}
   }
