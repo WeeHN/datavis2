@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 600,
-    "height": 400,
+    "width": 450,
+    "height": 300,
     "data": {"url": "foodPrices.csv"},
     "mark": {"type": "line", "strokeWidth": 5},
     
@@ -16,13 +16,13 @@
       "x": {
         "field": "YearMonth",
         "type": "temporal",
-        "axis": {"domain": false, "format": "%Y-%m", "tickSize": 4}
+        "axis": {"domain": false, "format": "%Y-%m", "tickSize": 1}
         
       },
       "y": {
         "field": "Average Price",
         "type": "quantitative",
-        "axis": {"title": "Average Price ($)", "min": 0}
+        "axis": {"min": 0},"title":"Average Price (AUD)"
       },
       "color": {
         "field": "Food Item",
