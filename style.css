@@ -3,7 +3,9 @@ body, h1, h2, p {
   padding: 0;
 }
 
-
+.visualization1 {
+  margin-top: 20px;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #fff;
