@@ -36,12 +36,14 @@ body {
 
 .container2 {
   max-width: 960px;
+  padding: 10px;
+
   margin: 0 auto;
-  padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  margin-top: 5px;
+  border-radius: 15px;
+  margin-top: 10px;
+  border: 2px solid #000000; /* Add a border around the container */
+
 }
 
 .header {
